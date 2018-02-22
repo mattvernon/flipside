@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+// Variables =======================================================
+
+// Colours
+
+$nude1: #FFFAF9;
+$nude2: #FFF2F1;
+$nude3: #FFEAE7;
+$nude4: #F2D7D3;
+$nude5: #DCBDBA;
+$navy: #181C52;
+$yellow: #FFDD64;
+
+// Typefaces
+
+$mono: 'Space Mono', monospace;
+
+
+// Media Queries
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "base",
+  "pages/index",
+  "pages/home",
+  "modules/navigation",
+  "modules/footer"
+;
