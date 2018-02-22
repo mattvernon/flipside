@@ -1,0 +1,32 @@
+.searchbar {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 80px 0;
+
+  div {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+}
+
+.searchbar--location {
+  flex: 4;
+}
+
+// .searchbar--date {
+//   flex: 2;
+// }
+//
+// .searchbar--date div {
+//   height: 63px;
+//   width: 45%;
+//   background-color: $navy;
+// }
+
+.searchbar--tickets {
+  flex: 1;
+}

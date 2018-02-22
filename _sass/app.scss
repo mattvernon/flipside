@@ -16,7 +16,10 @@ $yellow: #FFDD64;
 // Typefaces
 
 $mono: 'Space Mono', monospace;
-
+$camp-semi: 'Campton-SemiBold', sans-serif;
+$camp-med: 'Campton-Medium', sans-serif;
+$camp-book: 'Campton-Book', sans-serif;
+$noe: 'NoeDisplay-Bold', serif;
 
 // Media Queries
 
@@ -35,6 +38,10 @@ $mono: 'Space Mono', monospace;
   "base",
   "pages/index",
   "pages/home",
+  "modules/webfonts",
   "modules/navigation",
-  "modules/footer"
+  "modules/footer",
+  "modules/buttons",
+  "modules/inputs",
+  "modules/searchbar"
 ;
