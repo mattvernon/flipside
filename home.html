@@ -2,15 +2,52 @@
 layout: default
 ---
 
+
+
+<section class="home--hero">
+  <h1>A place for women of all types to come together, be creative and have a little fun.</h1>
+  <h2>Plus there’s wine too.</h2>
+  {% include searchbar.html %}
+</section>
+
+
+<!-- <section class="slider"></section> -->
+
 <div class="wrapper">
 
-  <section class="home--hero">
-    <h1>A place for women of all types to come together, be creative and have a little fun.</h1>
-    <h2>Plus there’s wine too.</h2>
+  <section class="icon-row">
+    <div class="icon-block">
+      <img src="assets/images/icons/flare.svg">
+      <h4>Flaunt your creative flare</h4>
+      <p>Let your hair down, imagination run free and unlock your inner creative artist!</p>
+    </div>
+    <div class="icon-block">
+      <img src="assets/images/icons/wine.svg">
+      <h4>The power of kindling connections</h4>
+      <p>We believe that you deserve an unforgettable night, with your favourite drink and friends by your side, old and new</p>
+    </div>
+    <div class="icon-block">
+      <img src="assets/images/icons/learn.svg">
+      <h4>Inspire and learn</h4>
+      <p>More than just a creative space, find your sanctuary and empower yourself learning something new</p>
+    </div>
   </section>
 
-  {% include searchbar.html %}
+  <section class="upcoming-events">
+    <div class="events-header">
+      <h6 class="tiny-heading">Upcoming Events</h6>
+    </div>
+    <div class="events-grid">
+      {% include eventcard--standard.html %}
+      {% include eventcard--soldout.html %}
+      {% include eventcard--sellingfast.html %}
+      {% include eventcard--standard.html %}
+      {% include eventcard--standard.html %}
+      {% include eventcard--standard.html %}
+    </div>
+    <div class="events--viewall">
+      <a href="events.html" class="button nude">View all events</a>
+    </div>
+  </section>
 
 </div>
-
-<section class="slider"></section>

@@ -1,5 +1,7 @@
 .home--hero {
   text-align: center;
+  background-color: $nude4;
+  padding: 40px 30px 100px 30px;
 
   h1 {
     font-size: 56px;
@@ -11,5 +13,10 @@
     font-family: $camp-semi;
     font-size: 34px;
     margin-top: 10px;
+  }
+
+  .searchbar {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

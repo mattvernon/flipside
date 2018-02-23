@@ -14,7 +14,12 @@
 }
 
 .searchbar--location {
-  flex: 4;
+  flex: 1;
+
+  input {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 // .searchbar--date {
@@ -28,5 +33,5 @@
 // }
 
 .searchbar--tickets {
-  flex: 1;
+  width: 200px;
 }
