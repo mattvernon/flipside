@@ -8,6 +8,8 @@
   font-family: $camp-semi;
   letter-spacing: 0.5px;
 
+  font-size: 14px;
+
   transition: 0.2s;
 }
 
@@ -43,5 +45,5 @@
 
 .button.nude:hover {
   box-shadow: none;
-  background-color: $nude5;
+  background-color: $nude4;
 }

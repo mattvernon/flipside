@@ -1,5 +1,5 @@
 .eventpage--hero {
-  margin-top: 40px;
+  margin-top: 10px;
   display: flex;
 
   h1 {
@@ -37,16 +37,13 @@
     margin-right: 10px;
   }
 
-  .button {
-    margin-right: 30px;
-  }
-
   small {
     font-family: $mono;
     font-size: 14px;
     display: inline-block;
     max-width: 150px;
     line-height: 20px;
+    padding-left: 20px;
   }
 
   p {
@@ -150,13 +147,18 @@
 
 
 .upcoming-events {
-  margin-top: 80px;
-  
+  margin-top: 0px;
+
   strong {
     display: inline-block;
     margin-left: 10px;
     margin-bottom: 20px;
   }
+}
+
+.eventpage--furtherdetails {
+  position: relative;
+  margin-bottom: 80px;
 }
 
 

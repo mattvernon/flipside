@@ -1,0 +1,132 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: $navy;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#modal-close {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+}
+
+#circle {
+  transition: 0.2s;
+}
+
+#circle:hover {
+  fill: $navy2;
+  cursor: pointer;
+}
+
+.modal {
+  width: 90%;
+  max-width: 800px;
+  height: 600px;
+  background-color: $nude3;
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+}
+
+.modal--header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+  padding: 8px 25px;
+  border-bottom: 1px solid $nude4;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  h2 {
+    font-family: $camp-semi;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  .tickets-left {
+    background-color: $coral;
+    padding: 15px 30px;
+    border-radius: 100px;
+  }
+}
+
+.modal--footer {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px 20px 30px;
+  border-top: 1px solid $nude4;
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.ticket-container {
+  padding: 128px 30px 120px 30px;
+  height: 600px;
+  overflow: scroll;
+}
+
+.ticket-option {
+  background-color: white;
+  border-radius: 4px;
+  padding: 40px 40px;
+  border: 1px solid $nude4;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    margin-top: 0;
+    font-family: $camp-semi;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: $camp-med;
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+.ticket--detail {
+  padding-right: 60px;
+}
+
+.ticket--qty {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  select {
+
+  }
+}

@@ -28,21 +28,44 @@ layout: default
     </div>
   </section>
 
-  <section class="eventpage--description content-wrapper">
-    <strong>Description</strong>
-    <p>Leslie Kirchhoff has always been something of a multipotentialite. Raised just outside Milwaukee, Wisconsin, she grew up playing piano, guitar, and even some percussion here and there in the school band, all the while dreaming of the day she could follow the career path of her cousin, a radio DJ. “I always thought that was the coolest job in the world to get paid to play music that you love,” she recalls.</p>
-    <p>Fast forward a decade or so and Kirchhoff found herself trekking nearly a thousand miles east to attend NYU—a decision she credits largely to the fact that NYU meant NYC. “I liked the idea that being there meant you would be among the best of the best, in every industry. Lots of opportunity to learn from and be inspired by the talent around you.”</p>
+  <section class="eventpage--furtherdetails content-wrapper">
+    <div class="share-widget-container">
+      <div class="share-widget">
+        <nav>
+          <a href="#">
+            <img src="assets/images/icons/facebook.svg">
+          </a>
+
+          <a href="#">
+            <img src="assets/images/icons/messenger.svg">
+          </a>
+
+          <a href="#">
+            <img src="assets/images/icons/twitter.svg">
+          </a>
+        </nav>
+        <span>Share</span>
+      </div>
+    </div>
+
+
+    <div class="eventpage--description">
+      <strong>Description</strong>
+      <p>Leslie Kirchhoff has always been something of a multipotentialite. Raised just outside Milwaukee, Wisconsin, she grew up playing piano, guitar, and even some percussion here and there in the school band, all the while dreaming of the day she could follow the career path of her cousin, a radio DJ. “I always thought that was the coolest job in the world to get paid to play music that you love,” she recalls.</p>
+      <p>Fast forward a decade or so and Kirchhoff found herself trekking nearly a thousand miles east to attend NYU—a decision she credits largely to the fact that NYU meant NYC. “I liked the idea that being there meant you would be among the best of the best, in every industry. Lots of opportunity to learn from and be inspired by the talent around you.”</p>
+    </div>
+
+    <div class="eventpage--artist">
+      <strong>Artist</strong>
+      {% include artistcard.html %}
+    </div>
+
+    <div class="eventpage--location">
+      <strong>Location</strong>
+      {% include locationcard.html %}
+    </div>
   </section>
 
-  <section class="eventpage--artist content-wrapper">
-    <strong>Artist</strong>
-    {% include artistcard.html %}
-  </section>
-
-  <section class="eventpage--location content-wrapper">
-    <strong>Location</strong>
-    {% include locationcard.html %}
-  </section>
 
   <section class="upcoming-events">
     <strong>Other Upcoming Events</strong>

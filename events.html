@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="wrapper events--hero">
+  <h1>Events</h1>
+  <p>Paint and party with friends at a local bar or restaurant</p>
+  {% include searchbar.html %}
+</div>
+
+
+<section class="all-upcoming-events">
+  <div class="wrapper">
+    <div class="events-header">
+      <h6 class="tiny-heading">Upcoming Events</h6>
+    </div>
+    <div class="events-grid">
+      {% include eventcard--standard.html %}
+      {% include eventcard--soldout.html %}
+      {% include eventcard--sellingfast.html %}
+      {% include eventcard--standard.html %}
+      {% include eventcard--standard.html %}
+      {% include eventcard--standard.html %}
+    </div>
+    <div class="events--viewall">
+      <a href="events.html" class="button">Load More</a>
+    </div>
+  </div>
+</section>
+
+
+{% include footer.html %}

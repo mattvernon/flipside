@@ -33,12 +33,13 @@ footer {
   padding-top: 80px;
 
   h2 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 0;
   }
 
   p {
-    margin-top: 0;
+    margin: 0 auto;
+    max-width: 350px;
   }
 
 
@@ -49,6 +50,6 @@ footer {
 
   .mc-field-group {
     flex: 1;
-    margin-right: 55px;
+    margin-right: 10px;
   }
 }
