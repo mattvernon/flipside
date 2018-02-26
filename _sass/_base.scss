@@ -33,6 +33,12 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-family: $mono;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 
 
 
@@ -40,6 +46,17 @@ a {
   max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 770px;
+  margin: 0 auto;
+
+  p {
+    font-family: $camp-med;
+    font-size: 18px;
+    line-height: 38px;
+  }
 }
 
 

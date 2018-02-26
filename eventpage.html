@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  <section class="eventpage--hero">
+    <div class="eventpage--image" style="background-image: url(assets/images/photos/eventplaceholder.jpg);"></div>
+
+    <div class="eventpage--details">
+      <div class="eventpage--date">
+        <p class="date--number">23</p>
+        <p class="date--month">August</p>
+      </div>
+      <div class="eventpage--maindetails">
+        <h1 class="eventdetails--title">Life Drawing Social</h1>
+        <p class="eventdetails--description">A quick description about the featured post goes here.</p>
+        <div class="eventdetails--location">
+          <img src="assets/images/icons/marker.svg"><p>Carriageworks, Sydney</p>
+        </div>
+        <div class="eventdetails--time">
+          <img src="assets/images/icons/clock.svg"><p>Starts 6.00pm</p>
+        </div>
+      </div>
+      <div class="eventdetails--tickets">
+        <a href="ticketmodal.html" class="button">Buy Tickets</a>
+        <small class="tickets-left">Hurry, only 5 spots left!</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="eventpage--description content-wrapper">
+    <strong>Description</strong>
+    <p>Leslie Kirchhoff has always been something of a multipotentialite. Raised just outside Milwaukee, Wisconsin, she grew up playing piano, guitar, and even some percussion here and there in the school band, all the while dreaming of the day she could follow the career path of her cousin, a radio DJ. “I always thought that was the coolest job in the world to get paid to play music that you love,” she recalls.</p>
+    <p>Fast forward a decade or so and Kirchhoff found herself trekking nearly a thousand miles east to attend NYU—a decision she credits largely to the fact that NYU meant NYC. “I liked the idea that being there meant you would be among the best of the best, in every industry. Lots of opportunity to learn from and be inspired by the talent around you.”</p>
+  </section>
+
+  <section class="eventpage--artist content-wrapper">
+    <strong>Artist</strong>
+    {% include artistcard.html %}
+  </section>
+
+  <section class="eventpage--location content-wrapper">
+    <strong>Location</strong>
+    {% include locationcard.html %}
+  </section>
+
+  <section class="upcoming-events">
+    <strong>Other Upcoming Events</strong>
+    <div class="events-grid">
+      {% include eventcard--standard.html %}
+      {% include eventcard--standard.html %}
+      {% include eventcard--standard.html %}
+    </div>
+    <div class="events--viewall">
+      <a href="events.html" class="button nude">View all events</a>
+    </div>
+  </section>
+</div>
+
+{% include footer.html %}

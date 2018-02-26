@@ -1,7 +1,7 @@
 .home--hero {
   text-align: center;
   background-color: $nude4;
-  padding: 40px 30px 100px 30px;
+  padding: 40px 30px 40px 30px;
 
   h1 {
     font-size: 56px;
@@ -14,9 +14,27 @@
     font-size: 34px;
     margin-top: 10px;
   }
+}
 
-  .searchbar {
-    max-width: 1200px;
+.ethos-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 30px;
+  background-color: $coral;
+
+  h2 {
+    font-size: 56px;
+    color: white;
+  }
+
+  span {
+    color: $navy;
+  }
+
+  div {
+    max-width: 865px;
     margin: 0 auto;
   }
 }

@@ -1,14 +1,13 @@
 footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-  padding-bottom: 40px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
+  padding: 100px 30px;
   font-family: $mono;
+  background-color: white;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   nav a {
     display: block;
@@ -25,4 +24,31 @@ footer {
 .footer--social a:last-child {
   display: inline;
   margin-right: 0px;
+}
+
+
+.mail-cta {
+  text-align: center;
+  background-color: white;
+  padding-top: 80px;
+
+  h2 {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+
+  #mc-signup-form {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .mc-field-group {
+    flex: 1;
+    margin-right: 55px;
+  }
 }
