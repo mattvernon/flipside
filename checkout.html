@@ -1,0 +1,135 @@
+---
+layout: checkout
+---
+
+<div class="wrapper checkout-form">
+
+  <section class="order-summary checkout-wrapper">
+    <div class="checkout-header">
+      <h2>Order Summary</h2>
+    </div>
+    <div class="checkout-container">
+      <div class="Rtable Rtable--5cols">
+        <!-- Event name column -->
+        <div style="order:1;" class="Rtable-cell cell-lg"><h3>Event Name</h3></div>
+        <div style="order:2;" class="Rtable-cell cell-lg">Life Drawing Social</div>
+
+        <!-- Ticket Type column -->
+        <div style="order:1;" class="Rtable-cell cell-lg"><h3>Ticket Type</h3></div>
+        <div style="order:2;" class="Rtable-cell cell-lg">General Admission</div>
+
+        <!-- Qty column -->
+        <div style="order:1;" class="Rtable-cell cell-sml"><h3>Qty</h3></div>
+        <div style="order:2;" class="Rtable-cell cell-sml">1</div>
+
+        <!-- Price column -->
+        <div style="order:1;" class="Rtable-cell cell-sml"><h3>Price</h3></div>
+        <div style="order:2;" class="Rtable-cell cell-sml">$24.00</div>
+
+        <!-- Remove column -->
+        <div style="order:1;" class="Rtable-cell cell-sml"></div>
+        <div style="order:2;" class="Rtable-cell  cell-sml Rtable-cell--alignRight"><a href="#" class="remove-button">Remove</a></div>
+
+      </div>
+      <div class="order-total">
+        <h2>Order Total</h2>
+        <p class="order-total-price">$48.00</p>
+      </div>
+  </section>
+
+  <section class="order-details checkout-wrapper">
+    <div class="checkout-header">
+      <h2>Order Details</h2>
+    </div>
+    <div class="checkout-container">
+      <div class="checkout--fieldgroup">
+        <div class="input-wrap half-field">
+          <label for="full-name">Your Name</label>
+          <input name="full-name" type="text" placeholder="Please enter your full name" class="half-field">
+        </div>
+
+        <div class="input-wrap half-field">
+          <label for="email">Your Email Address</label>
+          <input name="email" type="email" class="half-field">
+        </div>
+      </div>
+
+      <div class="checkout--fieldgroup">
+        <div class="input-wrap">
+          <label for="address-1">Billing Address</label>
+          <input name="address-1" type="text" placeholder="Address Line 1">
+          <input name="address-1" type="text" placeholder="Address Line 2">
+        </div>
+
+        <div class="input-wrap half-field">
+          <input name="suburb" type="text" class="half-field" placeholder="City / Suburb">
+        </div>
+
+        <div class="input-wrap half-field">
+          <select>
+            <option>New South Wales</option>
+            <option>Victoria</option>
+            <option>Queensland</option>
+            <option>Australian Capital Territory</option>
+            <option>South Australia</option>
+            <option>Western Australia</option>
+            <option>Tasmania</option>
+            <option>Northern Territory</option>
+          </select>
+        </div>
+
+        <div class="input-wrap">
+          <input name="postcode" type="text" placeholder="Post Code">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="payment-details checkout-wrapper">
+    <div class="checkout-header">
+      <h2>Payment</h2>
+      <div class="payment-logos">
+        <img src="assets/images/icons/mc.svg">
+        <img src="assets/images/icons/visa.svg">
+        <img src="assets/images/icons/amex.svg">
+        <img src="assets/images/icons/stripe.svg">
+      </div>
+    </div>
+    <div class="checkout-container">
+      <form action="/charge" method="post" id="payment-form">
+        <div class="form-row">
+          <div id="card-element">
+            <!-- A Stripe Element will be inserted here. -->
+          </div>
+
+          <!-- Used to display Element errors. -->
+          <div id="card-errors" role="alert"></div>
+        </div>
+
+        <button>Send Payment</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="back-button">
+    <a href="#">
+      <svg width="47px" height="46px" viewBox="0 0 47 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Checkout" transform="translate(-126.000000, -936.000000)">
+                  <g id="Group-12" transform="translate(126.507812, 936.000000)">
+                      <g id="tail-left" transform="translate(12.685547, 13.792969)" fill="#181C52" fill-rule="nonzero">
+                          <path d="M0.293,8.293 L8,0.586 L9.414,2 L3.414,8 L21,8 C21.553,8 22,8.448 22,9 C22,9.552 21.553,10 21,10 L3.414,10 L9.414,16 L8,17.414 L0.293,9.707 C-0.098,9.316 -0.098,8.684 0.293,8.293 Z" id="Shape"></path>
+                      </g>
+                      <circle id="Oval-4" stroke="#F8E4E2" cx="23" cy="23" r="22.1210938"></circle>
+                  </g>
+              </g>
+          </g>
+      </svg>
+    </a>
+  </div>
+
+</div>

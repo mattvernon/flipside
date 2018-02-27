@@ -47,3 +47,19 @@
   box-shadow: none;
   background-color: $nude4;
 }
+
+.remove-button {
+  border: 1px solid $nude3;
+  border-radius: 100px;
+  padding: 10px 15px 10px 30px;
+  font-size: 12px;
+  transition: 0.2s;
+  background-image: url("images/icons/remove.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 10px;
+}
+
+.remove-button:hover {
+  background-color: $coral;
+  border: 1px solid $coral;
+}
