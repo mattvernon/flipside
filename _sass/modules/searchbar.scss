@@ -6,6 +6,15 @@
 
   margin: 80px 0;
 
+  @include medium {
+    margin: 40px 0;
+  }
+
+  @include small {
+    flex-direction: column;
+  }
+
+
   div {
     display: inline-block;
     margin-right: 5px;
@@ -15,6 +24,11 @@
 
 .searchbar--location {
   flex: 1;
+
+  @include small {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 
   input {
     max-width: 100%;
@@ -34,4 +48,9 @@
 
 .searchbar--tickets {
   width: 200px;
+
+  @include small {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }

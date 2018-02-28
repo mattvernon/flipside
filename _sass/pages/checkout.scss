@@ -8,6 +8,16 @@
     font-family: $camp-med;
     font-size: 24px;
     margin: 0;
+
+    @include small {
+      font-size: 18px;
+    }
+  }
+
+  h3 {
+    @include small {
+      font-size: 16px;
+    }
   }
 }
 
@@ -21,6 +31,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include small {
+    padding: 20px;
+  }
 }
 
 .checkout-container {
@@ -29,6 +43,10 @@
   input {
     margin-bottom: 10px;
   }
+}
+
+.checkout-container.sml-padding {
+  padding: 10px 30px 20px 30px;
 }
 
 // FLEX BOX TABLE ////////////////////////////////////////////////////////////
@@ -53,11 +71,11 @@
 }
 
 .Rtable-cell.cell-lg {
-  width: 30%;
+  width: 25%;
 }
 
 .Rtable-cell.cell-sml {
-  width: 10%;
+  width: 12%;
 }
 
 // /* Table column sizing
@@ -80,9 +98,28 @@
 }
 
 .checkout--fieldgroup {
-  margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 5px;
+
+  @include small {
+    display: block;
+  }
 }
 
+
+
+.input-wrap {
+  flex: 1;
+  margin-left: 15px;
+
+  @include small {
+    margin-left: 0;
+  }
+}
+
+.input-wrap:first-child {
+  margin-left: 0;
+}
 
 .payment-logos {
   display: flex;
@@ -93,6 +130,8 @@
   }
 }
 
+// back button
+
 .checkout-form {
   position: relative;
 }
@@ -102,6 +141,10 @@
   top: 0;
   left: 20px;
   height: 100%;
+
+  @include medium {
+    display: none;
+  }
 
   a {
     position: sticky;

@@ -5,6 +5,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include small {
+    padding: 20px 30px;
+  }
+}
+
+.header--logo img {
+  @include small {
+    width: 100px;
+  }
 }
 
 
@@ -15,12 +25,20 @@ header {
     margin: 0 15px;
     line-height: 0;
   }
+
+  @include small {
+    display: none;
+  }
 }
 
 .header--options {
 
   a:first-child {
     margin-right: 20px;
+  }
+
+  @include small {
+    display: none;
   }
 
 }

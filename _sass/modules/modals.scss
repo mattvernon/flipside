@@ -13,6 +13,13 @@
   position: fixed;
   top: 60px;
   right: 60px;
+
+  @include medium {
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 #circle {
@@ -34,6 +41,11 @@
   left: 50vw;
   transform: translate(-50%, -50%);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+
+  @include small {
+    height: auto;
+    max-height: 80vh;
+  }
 }
 
 .modal--header {
@@ -51,16 +63,29 @@
   left: 0;
   width: 100%;
 
+  @include small {
+    padding: 10px 20px;
+  }
+
   h2 {
     font-family: $camp-semi;
     font-size: 24px;
     letter-spacing: -0.5px;
+
+    @include small {
+      font-size: 18px;
+    }
   }
 
   .tickets-left {
     background-color: $coral;
     padding: 15px 30px;
     border-radius: 100px;
+    margin: 0;
+
+    @include small {
+      font-size: 14px;
+    }
   }
 }
 
@@ -79,6 +104,11 @@
 
   p {
     font-size: 24px;
+
+    @include small {
+      font-size: 16px;
+      width: 50%;
+    }
   }
 }
 
@@ -86,6 +116,12 @@
   padding: 128px 30px 120px 30px;
   height: 600px;
   overflow: scroll;
+
+  @include small {
+    padding: 100px 30px;
+    height: auto;
+    max-height: 80vh;
+  }
 }
 
 .ticket-option {
@@ -99,17 +135,29 @@
   align-items: center;
   justify-content: space-between;
 
+  @include small {
+    padding: 20px;
+  }
+
   h2 {
     margin-top: 0;
     font-family: $camp-semi;
     font-size: 24px;
     margin-bottom: 10px;
+
+    @include small {
+      font-size: 18px;
+    }
   }
 
   p {
     font-size: $camp-med;
     font-size: 24px;
     margin: 0;
+
+    @include small {
+      font-size: 14px;
+    }
   }
 }
 

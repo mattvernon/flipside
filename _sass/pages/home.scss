@@ -5,16 +5,32 @@
   background-size: cover;
   background-position: center;
 
+  @include medium {
+    padding: 20px 0;
+  }
+
   h1 {
     font-size: 56px;
     max-width: 800px;
     margin: 60px auto 0px auto;
+
+    @include medium {
+      margin: 40px auto 0px auto;
+    }
+
+    @include small {
+      font-size: 30px;
+    }
   }
 
   h2 {
     font-family: $camp-semi;
     font-size: 34px;
     margin-top: 10px;
+
+    @include small {
+      font-size: 22px;
+    }
   }
 }
 
@@ -26,9 +42,17 @@
   padding: 100px 30px;
   background-color: $coral;
 
+  @include small {
+    padding: 30px;
+  }
+
   h2 {
     font-size: 56px;
     color: white;
+
+    @include small {
+      font-size: 36px;
+    }
   }
 
   span {

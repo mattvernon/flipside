@@ -17,6 +17,10 @@ h1 {
   font-size: 86px;
   font-family: $noe;
   margin-bottom: 5px;
+
+  @include small {
+    font-size: 56px;
+  }
 }
 
 h2 {

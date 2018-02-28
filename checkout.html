@@ -41,7 +41,7 @@ layout: checkout
     <div class="checkout-header">
       <h2>Order Details</h2>
     </div>
-    <div class="checkout-container">
+    <div class="checkout-container sml-padding">
       <div class="checkout--fieldgroup">
         <div class="input-wrap half-field">
           <label for="full-name">Your Name</label>
@@ -58,9 +58,16 @@ layout: checkout
         <div class="input-wrap">
           <label for="address-1">Billing Address</label>
           <input name="address-1" type="text" placeholder="Address Line 1">
-          <input name="address-1" type="text" placeholder="Address Line 2">
         </div>
+      </div>
 
+      <div class="checkout--fieldgroup">
+        <div class="input-wrap">
+          <input name="address-2" type="text" placeholder="Address Line 2">
+        </div>
+      </div>
+
+      <div class="checkout--fieldgroup">
         <div class="input-wrap half-field">
           <input name="suburb" type="text" class="half-field" placeholder="City / Suburb">
         </div>
@@ -77,13 +84,14 @@ layout: checkout
             <option>Northern Territory</option>
           </select>
         </div>
+      </div>
 
+      <div class="checkout--fieldgroup">
         <div class="input-wrap">
           <input name="postcode" type="text" placeholder="Post Code">
         </div>
       </div>
 
-    </div>
   </section>
 
   <section class="payment-details checkout-wrapper">

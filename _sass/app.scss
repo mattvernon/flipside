@@ -26,14 +26,23 @@ $noe: 'NoeDisplay-Bold', serif;
 
 // Media Queries
 
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
+@mixin small {
+  @media (max-width: 680px) {
     @content;
   }
 }
 
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+@mixin medium {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
+
+
+@mixin large {
+  @media (min-width: 1151px) {
+    @content;
+  }
 }
 
 // Import partials.
@@ -44,6 +53,7 @@ $noe: 'NoeDisplay-Bold', serif;
   "pages/events",
   "pages/eventpage",
   "pages/checkout",
+  "pages/orderconfirmation",
   "modules/webfonts",
   "modules/navigation",
   "modules/footer",
