@@ -1,7 +1,10 @@
 footer {
-  padding: 100px 30px;
-  font-family: $mono;
   background-color: white;
+}
+
+.footer_slim {
+  padding: 60px 30px 100px 30px;
+  font-family: $mono;
 
   @include small {
     padding: 50px 30px 30px 30px;
@@ -31,6 +34,12 @@ footer {
 
 }
 
+.footer--social {
+  display: flex;
+  flex-direction: row;
+}
+
+
 .footer--social a {
   display: inline;
   margin-right: 10px;
@@ -46,6 +55,7 @@ footer {
   text-align: center;
   background-color: white;
   padding-top: 80px;
+  padding-bottom: 60px;
 
   @include small {
     padding-top: 50px;

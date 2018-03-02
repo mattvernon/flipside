@@ -1,0 +1,73 @@
+.ethos-quote {
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+    font-size: 86px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include medium {
+      font-size: 36px;
+      max-width: 540px;
+    }
+  }
+
+}
+
+.careers-features {
+
+  padding-top: 60px;
+
+  h2 {
+    text-align: center;
+    font-family: $camp-med;
+    font-size: 24px;
+  }
+
+}
+
+.careers-cta {
+
+  text-align: center;
+  padding: 30px 0 140px 0;
+
+  h2 {
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+
+}
+
+#enquire {
+
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 600px;
+    display: inline-block;
+    margin: 0 auto 60px auto;
+  }
+
+}
+
+.enquire--form {
+  max-width: 700px;
+  margin: 0 auto;
+
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+}

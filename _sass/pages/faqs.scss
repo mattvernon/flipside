@@ -1,0 +1,39 @@
+.faqs {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  padding-bottom: 100px;
+}
+
+.faqs--question {
+  flex: 50%;
+  margin-bottom: 20px;
+
+  @include small {
+    flex: 100%;
+    padding: 0!important;
+  }
+
+  strong {
+    font-family: $camp-semi;
+    font-size: 18px;
+    display: block;
+    max-width: 500px;
+    line-height: 24px;
+  }
+
+  p {
+    max-width: 400px;
+    line-height: 24px;
+  }
+}
+
+.faqs--question:nth-of-type(odd) {
+  padding-right: 15px;
+}
+
+.faqs--question:nth-of-type(even) {
+  padding-left: 15px;
+}
