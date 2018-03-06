@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="wrapper">
+    <h1>Gift Cards</h1>
+    <h2>Give someone special en e-gift card for an extraordinary night!</h2>
+    <p>They’re easy to customize. Start by selecting a banner, or uploading your own image.</p>
+  </div>
+</section>
+
+<section class="giftcard-builder wrapper">
+  <div class="giftcard-banner">
+    <a href="#" class="upload-button">Upload a Banner</a>
+  </div>
+  <div class="giftcard-form">
+    <div class="form-container">
+      <textarea name="message" placeholder="Type your message here" class="giftcard-message"></textarea>
+      <div class="giftcard-amount">
+        <p>Select an Amount</p>
+        <div class="giftcard-amount--options">
+          <input type="radio" id="r1" name="cc" />
+          <label for="r1">$35</label>
+
+          <input type="radio" id="r2" name="cc" />
+          <label for="r2">$55</label>
+
+          <input type="radio" id="r3" name="cc" />
+          <label for="r3">$65</label>
+
+          <input type="radio" id="r4" name="cc" />
+          <label for="r4">$90</label>
+        </div>
+      </div>
+      <p>How would you like to deliver the Gift Card?</p>
+    </div>
+    <div class="giftcard-send--header">
+      <a href="#" class="selected" id="email-link">Email</a><a href="#" id="print-link">Print</a>
+    </div>
+    <div id="email-details">
+      <label>To</label>
+      <input type="text" placeholder="Please enter the recipients name">
+      <input type="email" placeholder="Please enter their email">
+      <label>From</label>
+      <input type="text" placeholder="Your Name">
+      <div class="delivery-date-container">
+        <div class="input-wrap">
+          <label>Send the Gift Card on</label>
+          <input type="date" id="delivery-date">
+        </div>
+        <a href="#" class="asap-button">ASAP</a>
+      </div>
+    </div>
+    <div id="print-details">
+      <label>To</label>
+      <input type="text" placeholder="Please enter the recipients name">
+      <p>The Gift Card will be emailled as a PDF to the email address you use whilst checking out.</p>
+    </div>
+  </div>
+</section>
+
+<div class="giftcard-form--submit wrapper">
+  <a href="checkout.html" class="button">Checkout</a>
+  <a href="checkout.html" class="button nude">Add to Cart</a>
+</div>
+
+{% include footer.html %}

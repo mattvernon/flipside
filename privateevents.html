@@ -37,8 +37,18 @@ layout: default
     <div class="enquire--form">
       <input type="text" name="name" placeholder="Your Name">
       <input type="email" name="email" placeholder="Your Email Address">
-      <input type="text" name="subject" placeholder="Subject">
-      <textarea placeholder="Message"></textarea>
+      <select>
+        <option value="" disabled selected>Select type of Event</option>
+        <option value="private">Private Party</option>
+        <option value="corporate">Corporate Event</option>
+      </select>
+      <select>
+        <option value="" disabled selected>Number of Guests</option>
+        <option value="less-than-10">Less than 10</option>
+        <option value="11-to-20">11 to 20</option>
+        <option value="20-plus">More than 20</option>
+      </select>
+      <textarea placeholder="Message (Optional)"></textarea>
       <a href="#" class="button">Send Message</a>
     </div>
   </div>

@@ -74,3 +74,37 @@
   background-color: $coral;
   border: 1px solid $coral;
 }
+
+.upload-button {
+  background-color: white;
+  padding: 25px 40px 25px 70px;
+  border-radius: 100px;
+  font-family: $camp-med;
+  background-image: url("images/icons/camera.svg");
+  background-repeat: no-repeat;
+  background-position: 28px 21px;
+  transition: 0.2s;
+}
+
+.upload-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.25);
+}
+
+.asap-button {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 100px;
+  border: 1px solid $navy;
+  font-family: $camp-med;
+  transition: 0.2s;
+}
+
+.asap-button:hover {
+  background-color: $nude1;
+}
+
+.asap-button.selected {
+  background-color: $navy;
+  color: white;
+}

@@ -1,0 +1,121 @@
+.giftcard-builder {
+  position: relative;
+  height: 1300px;
+}
+
+.giftcard-banner {
+  max-width: 970px;
+  height: 500px;
+  background-color: $nude5;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+
+  .upload-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+.giftcard-form {
+  width: 570px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid $nude4;
+
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.form-container {
+  padding: 50px 40px;
+}
+
+textarea.giftcard-message {
+  background-color: white;
+  box-shadow: none;
+  text-align: center;
+  font-family: $noe;
+  font-size: 36px;
+  min-height: 160px;
+}
+
+.giftcard-amount--options {
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.giftcard-send--header {
+  // width: calc(100% + 60px);
+
+  margin-top: -20px;
+
+  a {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    border-bottom: 1px solid $nude3;
+    font-family: $camp-med;
+    padding-bottom: 15px;
+    color: $nude5;
+    padding-left: 25px;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    color: $navy;
+  }
+
+  a.selected {
+    border-bottom: 3px solid $navy;
+    color: $navy;
+  }
+}
+
+#email-details,
+#print-details {
+  background-color: $nude2;
+  margin-top: -3px;
+  padding: 10px 30px 30px 30px;
+  text-align: left;
+  border-radius: 4px;
+
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+#print-details {
+
+  display: none;
+
+  p {
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+}
+
+.delivery-date-container {
+  display: flex;
+  align-items: flex-start;
+
+  .asap-button {
+    margin-top: 52px;
+    margin-left: 20px;
+  }
+}
+
+.giftcard-form--submit {
+  text-align: center;
+  padding-bottom: 100px;
+
+  a {
+    display: block;
+    max-width: 250px;
+    margin: 10px auto;
+  }
+}

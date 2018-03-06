@@ -1,26 +1,43 @@
-var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
-var elements = stripe.elements();
+// STRIPE CHECKOUT =================================================
 
-// Custom styling can be passed to options when creating an Element.
-var style = {
-  base: {
-    // Add your base input styles here. For example:
-    fontSize: '16px',
-    color: "#32325d",
-  }
-};
 
-// Create an instance of the card Element.
-var card = elements.create('card', {style: style});
 
-// Add an instance of the card Element into the `card-element` <div>.
-card.mount('#card-element');
+//
 
-card.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
-  if (event.error) {
-    displayError.textContent = event.error.message;
-  } else {
-    displayError.textContent = '';
-  }
+$(document).ready(function(){
+  console.log("JS is WORKING");
+})
+
+$('#print-link').click(function(){
+
+  $('#print-link').addClass('selected')
+  $('#print-details').show()
+  $('#email-link').removeClass('selected')
+  $('#email-details').hide()
+  return false;
+
+});
+
+$('#email-link').click(function(){
+
+  $('#email-link').addClass('selected')
+  $('#email-details').show()
+  $('#print-link').removeClass('selected')
+  $('#print-details').hide()
+  return false;
+
+});
+
+$('.asap-button').click(function(){
+
+  $('.asap-button').toggleClass('selected')
+
+    if ($('#delivery-date').attr("disabled")) {
+        $('#delivery-date').removeAttr("disabled");
+    } else {
+        $('#delivery-date').attr("disabled", "disabled");
+    }
+
+  return false
+
 });
