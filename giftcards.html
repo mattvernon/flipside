@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="hero">
+<section class="hero giftcard-hero">
   <div class="wrapper">
     <h1>Gift Cards</h1>
     <h2>Give someone special en e-gift card for an extraordinary night!</h2>
@@ -11,9 +11,19 @@ layout: default
 </section>
 
 <section class="giftcard-builder wrapper">
+
   <div class="giftcard-banner">
     <a href="#" class="upload-button">Upload a Banner</a>
+    <div class="siema slider giftcard--slider">
+      <div style="background-image:url('assets/images/banners/image_1.jpg');"></div>
+      <div style="background-image:url('assets/images/banners/image_2.jpg');"></div>
+      <div style="background-image:url('assets/images/banners/image_3.jpg');"></div>
+    </div>
+    <a class="prev"><img src="assets/images/icons/prev.svg"></a>
+    <as class="next"><img src="assets/images/icons/next.svg"></a>
   </div>
+
+
   <div class="giftcard-form">
     <div class="form-container">
       <textarea name="message" placeholder="Type your message here" class="giftcard-message"></textarea>
@@ -62,7 +72,15 @@ layout: default
 
 <div class="giftcard-form--submit wrapper">
   <a href="checkout.html" class="button">Checkout</a>
-  <a href="checkout.html" class="button nude">Add to Cart</a>
 </div>
 
 {% include footer.html %}
+
+<script src="assets/js/siema.min.js"></script>
+<script>
+
+const mySiema = new Siema ({
+  loop: true,
+});
+
+</script>

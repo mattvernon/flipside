@@ -1,5 +1,11 @@
+.wrapper.checkout-form {
+  @include small {
+    padding: 0 10px;
+  }
+}
+
 .checkout-wrapper {
-  max-width: 880px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: white;
   margin-bottom: 40px;
@@ -26,7 +32,8 @@
 }
 
 .checkout-header {
-  background-color: $nude4;
+  background-color: $white;
+  border-bottom: 1px solid $grey2;
   padding: 30px 30px;
   display: flex;
   align-items: center;
@@ -39,14 +46,30 @@
 
 .checkout-container {
   padding: 30px 30px 20px 30px;
+  background-color: $white;
+
+  @include small {
+    padding: 20px;
+    font-size: 12px;
+  }
 
   input {
     margin-bottom: 10px;
+  }
+
+  h3 {
+    @include small {
+      font-size: 12px;
+    }
   }
 }
 
 .checkout-container.sml-padding {
   padding: 10px 30px 20px 30px;
+
+  @include small {
+    padding: 5px 20px;
+  }
 }
 
 // FLEX BOX TABLE ////////////////////////////////////////////////////////////
@@ -71,11 +94,11 @@
 }
 
 .Rtable-cell.cell-lg {
-  width: 25%;
+  width: 18%;
 }
 
 .Rtable-cell.cell-sml {
-  width: 12%;
+  width: 8%;
 }
 
 // /* Table column sizing
@@ -127,6 +150,10 @@
 
   img {
     margin-left: 15px;
+  }
+
+  @include small {
+    display: none;
   }
 }
 

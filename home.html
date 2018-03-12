@@ -6,14 +6,21 @@ layout: default
 
 <section class="home--hero">
   <div class="wrapper">
-    <h1>A place for women of all types to come together, be creative and have a little fun.</h1>
-    <h2>Plus there’s wine too.</h2>
+    <h1>Come and experience a different night out at a local bar or restaurant!</h1>
+    <h2>We're combining cocktails and creativity to bring out the artist in everyone!</h2>
     {% include searchbar.html %}
   </div>
 </section>
 
 
-<!-- <section class="slider"></section> -->
+
+<div class="siema slider home--slider">
+  <div style="background-image:url('assets/images/banners/image_1.jpg');"></div>
+  <div style="background-image:url('assets/images/banners/image_2.jpg');"></div>
+  <div style="background-image:url('assets/images/banners/image_3.jpg');"></div>
+  <div style="background-image:url('assets/images/banners/image_4.jpg');"></div>
+</div>
+
 
 <div class="wrapper">
 
@@ -38,6 +45,17 @@ layout: default
   <section class="upcoming-events">
     <div class="events-header">
       <h6 class="tiny-heading">Upcoming Events</h6>
+      <div class="location-filter">
+        <small>Filter</small>
+        <select>
+          <option>Sydney</option>
+          <option>Melbourne</option>
+          <option>Canberra</option>
+          <option>Brisbane</option>
+          <option>Adelaide</option>
+          <option>Perth</option>
+        </select>
+      </div>
     </div>
     <div class="events-grid">
       {% include eventcard--standard.html %}
@@ -56,8 +74,18 @@ layout: default
 
 <section class="ethos-cta">
   <div>
-    <h2>Bring your <span>mum,</span> your <span> co-workers,</span> your <span>best friend,  everyone’s welcome.</span></h2>
+    <h2>Share a <span>drink,</span> share <span>creativity,</span> share <span>ideas,</span> share an <span>unforgettable night.</span></h2>
   </div>
 </section>
 
 {% include footer.html %}
+
+<script src="assets/js/siema.min.js"></script>
+<script>
+const mySiema = new Siema ({
+  loop: true,
+  duration: 1000
+});
+
+setInterval(() => mySiema.next(), 5000)
+</script>

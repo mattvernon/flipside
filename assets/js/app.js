@@ -1,8 +1,21 @@
-// STRIPE CHECKOUT =================================================
+// MOBILE NAV ===========================================
 
+$('#nav-icon3').click(function(){
 
+  // open hamburger icon, animate and change color
+  $(this).toggleClass('open');
 
-//
+  // 2. show mobile header
+  $('.mobile-nav').toggleClass('open')
+
+  // 3. fix the body so you can't scroll
+  $('body').toggleClass('hidden')
+
+  return false
+
+});
+
+// GIFT CARD BUILDER ===============================================
 
 $(document).ready(function(){
   console.log("JS is WORKING");
@@ -28,6 +41,8 @@ $('#email-link').click(function(){
 
 });
 
+// disable date picker / asap button
+
 $('.asap-button').click(function(){
 
   $('.asap-button').toggleClass('selected')
@@ -41,3 +56,8 @@ $('.asap-button').click(function(){
   return false
 
 });
+
+// Slider is in html page due to problems initalizing Siema
+
+document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+document.querySelector('.next').addEventListener('click', () => mySiema.next());

@@ -1,6 +1,5 @@
 .home--hero {
   text-align: center;
-  background-color: $nude2;
   padding: 40px 30px 40px 30px;
   background-size: cover;
   background-position: center;
@@ -11,7 +10,7 @@
 
   h1 {
     font-size: 56px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 60px auto 0px auto;
 
     @include medium {
@@ -25,8 +24,8 @@
 
   h2 {
     font-family: $camp-semi;
-    font-size: 34px;
-    margin-top: 10px;
+    font-size: 24px;
+    margin-top: 20px;
 
     @include small {
       font-size: 22px;
@@ -40,7 +39,7 @@
   justify-content: center;
   text-align: center;
   padding: 100px 30px;
-  background-color: $coral;
+  background-color: #ffbd63;
 
   @include small {
     padding: 30px;
@@ -62,5 +61,27 @@
   div {
     max-width: 865px;
     margin: 0 auto;
+  }
+}
+
+
+/// INDEX STYLING FEEL FREE TO DELETE THIS ONCE THE SITE IS LAUNCHED
+
+.index {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    font-family: $camp-semi;
+    font-size: 24px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+
+  a {
+    font-family: $noe;
+    font-size: 36px;
+    margin-bottom: 10px;
   }
 }

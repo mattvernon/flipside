@@ -1,20 +1,95 @@
+.hero.giftcard-hero {
+  padding-bottom: 30px;
+}
+
 .giftcard-builder {
   position: relative;
   height: 1300px;
+
+  @include medium {
+    height: 1100px;
+  }
+
+  @include small {
+    height: 1200px;
+  }
+}
+
+.giftcard-builder.wrapper {
+  @include small {
+    padding: 0;
+  }
 }
 
 .giftcard-banner {
   max-width: 970px;
   height: 500px;
-  background-color: $nude5;
+  background-color: $grey5;
   border-radius: 4px;
   margin: 0 auto;
   position: relative;
+
+  @include small {
+    width: 95%;
+    height: 30vh;
+    z-index: -1;
+  }
 
   .upload-button {
     position: absolute;
     top: 30px;
     right: 30px;
+    z-index: 2;
+
+    @include small {
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  .prev {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @include medium {
+      left: 40px;
+    }
+
+    @include small {
+      display: none;
+    }
+  }
+
+  .next {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @include medium {
+      right: 40px;
+    }
+
+    @include small {
+      display: none;
+    }
+  }
+
+  .slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: -1;
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
   }
 }
 
@@ -22,17 +97,29 @@
   width: 570px;
   background-color: white;
   border-radius: 4px;
-  border: 1px solid $nude4;
+  border: 1px solid $grey4;
 
   position: absolute;
   top: 300px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+
+  @include small {
+    width: 90%;
+    position: static;
+    transform: none;
+    margin: -70px auto 0 auto;
+    z-index: 2;
+  }
 }
 
 .form-container {
   padding: 50px 40px;
+
+  @include small {
+    padding: 30px 20px;
+  }
 }
 
 textarea.giftcard-message {
@@ -58,10 +145,10 @@ textarea.giftcard-message {
     display: inline-block;
     width: 50%;
     text-align: left;
-    border-bottom: 1px solid $nude3;
+    border-bottom: 1px solid $grey3;
     font-family: $camp-med;
     padding-bottom: 15px;
-    color: $nude5;
+    color: $grey5;
     padding-left: 25px;
     transition: 0.2s;
   }
@@ -78,11 +165,15 @@ textarea.giftcard-message {
 
 #email-details,
 #print-details {
-  background-color: $nude2;
+  background-color: $grey2;
   margin-top: -3px;
   padding: 10px 30px 30px 30px;
   text-align: left;
   border-radius: 4px;
+
+  @include small {
+    padding: 3px 12px 12px 12px;
+  }
 
   input {
     margin-bottom: 10px;
@@ -106,6 +197,15 @@ textarea.giftcard-message {
   .asap-button {
     margin-top: 52px;
     margin-left: 20px;
+
+    @include small {
+      margin: 10px 0 0 0;
+      display: block;
+    }
+  }
+
+  @include small {
+    display: block;
   }
 }
 

@@ -65,7 +65,7 @@
 }
 
 .event-card--time {
-  background-color: $nude2;
+  background-color: $grey2;
 }
 
 .event-card--date,
@@ -126,10 +126,30 @@
 
 .events-header {
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 0 30px 0;
 
   .tiny-heading {
     margin-bottom: 0;
+  }
+}
+
+.location-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  small {
+    font-family: $camp-med;
+    font-size: 16px;
+    color: $grey5;
+    margin-right: 20px;
+  }
+
+  select {
+    min-width: 170px;
   }
 }
 

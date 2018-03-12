@@ -26,12 +26,12 @@
 }
 
 .button.soldout {
-  background-color: $nude2;
+  background-color: $grey2;
   color: $navy;
 }
 
 .button.soldout:hover {
-  background-color: $nude3;
+  background-color: $grey3;
   box-shadow: none;
 }
 
@@ -44,18 +44,18 @@
   background-color: $yellow2;
 }
 
-.button.nude {
-  background-color: $nude4;
+.button.grey {
+  background-color: $grey4;
   color: $navy;
 }
 
-.button.nude:hover {
+.button.grey:hover {
   box-shadow: none;
-  background-color: $nude4;
+  background-color: $grey4;
 }
 
 .remove-button {
-  border: 1px solid $nude3;
+  border: 1px solid $grey3;
   border-radius: 100px;
   padding: 10px 15px 10px 30px;
   font-size: 12px;
@@ -84,6 +84,11 @@
   background-repeat: no-repeat;
   background-position: 28px 21px;
   transition: 0.2s;
+
+  @include small {
+    padding: 12px 20px 12px 45px;
+    background-position: 14px 9px;
+  }
 }
 
 .upload-button:hover {
@@ -101,7 +106,7 @@
 }
 
 .asap-button:hover {
-  background-color: $nude1;
+  background-color: $grey1;
 }
 
 .asap-button.selected {

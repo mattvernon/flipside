@@ -9,7 +9,7 @@
 
 .faqs--question {
   flex: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @include small {
     flex: 100%;
@@ -25,8 +25,18 @@
   }
 
   p {
-    max-width: 400px;
+    max-width: 500px;
     line-height: 24px;
+  }
+
+  a {
+    padding-bottom: 2px;
+    border-bottom: 2px solid $nude5;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    border-bottom: 2px solid $navy;
   }
 }
 

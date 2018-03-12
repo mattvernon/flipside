@@ -4,7 +4,7 @@ layout: default
 
 <div class="wrapper events--hero">
   <h1>Events</h1>
-  <p>Paint and party with friends at a local bar or restaurant</p>
+  <p>Have a look at what we have planned for your next unforgettable night out!</p>
   {% include searchbar.html %}
 </div>
 
@@ -13,6 +13,17 @@ layout: default
   <div class="wrapper">
     <div class="events-header">
       <h6 class="tiny-heading">Upcoming Events</h6>
+      <div class="location-filter">
+        <small>Filter</small>
+        <select>
+          <option>Sydney</option>
+          <option>Melbourne</option>
+          <option>Canberra</option>
+          <option>Brisbane</option>
+          <option>Adelaide</option>
+          <option>Perth</option>
+        </select>
+      </div>
     </div>
     <div class="events-grid">
       {% include eventcard--standard.html %}
