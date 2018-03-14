@@ -146,6 +146,28 @@ button:hover {
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08);
 }
 
+.checkbox-section {
+  margin-bottom: 30px;
+  text-align: left;
+  
+  p {
+    font-size: 20px;
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.checkbox-column {
+  text-align: left;
+  label {
+    margin-top: 0;
+  }
+}
 
 
 input.darker,
