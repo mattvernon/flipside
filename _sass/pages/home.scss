@@ -21,6 +21,7 @@
 
     @include medium {
       font-size: 36px;
+      max-width: 600px;
       margin: 40px auto 0px auto;
     }
 
@@ -33,6 +34,12 @@
     font-family: $camp-semi;
     font-size: 24px;
     margin-top: 20px;
+
+    @include medium {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @include small {
       font-size: 22px;
