@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="17px" viewBox="0 0 12 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>terranium</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Event-Badges" transform="translate(-164.000000, -220.000000)" fill="#322B5E" fill-rule="nonzero">
+            <g id="Group-10-Copy" transform="translate(135.000000, 132.000000)">
+                <g id="Group-5" transform="translate(0.000000, 0.535156)">
+                    <g id="593786" transform="translate(0.000000, 64.000000)">
+                        <g id="Group-4-Copy-2" transform="translate(18.000000, 15.878906)">
+                            <g id="terranium" transform="translate(11.000000, 8.000000)">
+                                <path d="M11,7 C9.35669,7 7.91144,7.80353 7,9.02747 L7,1 C7,0.44775 6.55273,0 6,0 C5.44727,0 5,0.44775 5,1 L5,4.02747 C4.08856,2.80353 2.64331,2 1,2 L0,2 L0,4 C0,6.76141 2.23859,9 5,9 L5,15.12646 C5,15.67871 5.44727,16.12646 6,16.12646 C6.55273,16.12646 7,15.67871 7,15.12646 L7,14 C9.76141,14 12,11.76141 12,9 L12,7 L11,7 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

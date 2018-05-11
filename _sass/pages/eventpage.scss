@@ -49,6 +49,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 
   @include small {
     width: 100%;
@@ -81,6 +82,25 @@
 
   p {
 
+  }
+}
+
+.eventpage--tag {
+  display: flex;
+  background-color: $grey2;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+  img {
+    margin-right: 10px;
+  }
+
+  p {
+    margin: 0;
+    font-family: $camp-semi;
   }
 }
 

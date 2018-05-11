@@ -81,6 +81,26 @@
   height: 280px;
   background-size: cover;
   background-position: center center;
+  position: relative;
+}
+
+.event-card--tag {
+  display: flex;
+  background-color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  img {
+    margin-right: 10px;
+  }
+
+  p {
+    margin: 0;
+    font-family: $camp-semi;
+  }
 }
 
 .event-card--details {

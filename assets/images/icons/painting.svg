@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>painting</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Event-Badges" transform="translate(-961.000000, -220.000000)" fill="#322B5E" fill-rule="nonzero">
+            <g id="Group-10-Copy" transform="translate(135.000000, 132.000000)">
+                <g id="Group-5-Copy-2" transform="translate(800.000000, 0.535156)">
+                    <g id="1008431" transform="translate(0.000000, 64.000000)">
+                        <g id="Group-4" transform="translate(16.000000, 15.878906)">
+                            <g id="painting" transform="translate(10.000000, 8.000000)">
+                                <path d="M9,10 L6,7 L12.4,0.6 C13.2,-0.2 14.6,-0.2 15.4,0.6 C16.2,1.4 16.2,2.8 15.4,3.6 L9,10 Z" id="Shape"></path>
+                                <path d="M1.4,10.3 C2.6,9.1 4.5,9.1 5.6,10.3 C6.7,11.5 6.8,13.4 5.6,14.5 C4.4,15.6 0,16 0,16 C0,16 0.2,11.5 1.4,10.3 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
